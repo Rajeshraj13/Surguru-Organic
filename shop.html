@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Products| Surguru Organic</title>
+	<meta name="description"
+		content="Surguru Organic — Kodaikanal-based organic store offering pure hill garlic, natural honey, cardamom, coffee, pepper, and fresh hill bananas. 100% farm-fresh and chemical-free products from the Western Ghats.">
+	<meta name="keywords"
+		content="Surguru Organic, Kodaikanal organic products, hill garlic, Malai thean, organic honey, cardamom, organic coffee, black pepper, white pepper, hill banana, natural products, organic shop, Tamil Nadu organic store">
+	<meta name="author" content="Surguru Organic Team">
+	<link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+	<!-- Mobile Specific Meta -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/video.min.css">
+	<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="assets/css/rs6.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<style>
+		.or-product-inner-img {
+			width: 100%;
+			height: 250px;
+			/* adjust this height as needed */
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 23px;
+		}
+
+		.or-product-inner-img img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			/* makes sure image fills area without distortion */
+			border-radius: 8px;
+			/* optional for rounded corners */
+		}
+
+		.filter-item {
+			transition: all 0.3s ease;
+		}
+
+		.filter-item.hide {
+			display: none !important;
+		}
+
+		.filter li {
+			display: inline-block;
+			margin: 5px;
+			padding: 8px 15px;
+			background-color: #1c6758;
+			color: white;
+			cursor: pointer;
+			border-radius: 5px;
+			transition: 0.3s;
+		}
+
+		.filter li.active,
+		.filter li:hover {
+			background-color: #27ae60;
+		}
+	</style>
+
+</head>
+
+<body class="organio-wrapper">
+	<div id="preloader"></div>
+	<div class="up">
+		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+	</div>
+	<!-- Start of header section
+	============================================= -->
+	<header id="organio-header" class="organio-header-section header-style-one">
+		<div class="header-top">
+			<div class="container">
+				<div class="header-top-content d-flex justify-content-between align-items-center">
+					<div class="header-slug">
+						<span> Welcome to our Organic store Organico!</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="organic-main-navigation">
+			<div class="container">
+				<div class="organic-header-content  position-relative">
+					<div class="site-logo">
+						<a href="#"><img src="assets/img/logo/surguru.png" alt=""
+								style="width:95px; height:auto; margin-top: -10px;"></a>
+					</div>
+					<nav class="main-navigation-area clearfix ul-li">
+						<ul class="menu-navigation left-nav">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="index.html#or-about-1">About</a>
+							</li>
+
+						</ul>
+						<ul class="menu-navigation right-nav">
+							<li>
+								<a href="shop.html">Products</a>
+							</li>
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+		</div>
+		<div class="mobile_menu position-relative">
+			<div class="mobile_menu_button open_mobile_menu">
+				<i class="fas fa-bars"></i>
+			</div>
+			<div class="mobile_menu_wrap">
+				<div class="mobile_menu_overlay open_mobile_menu"></div>
+				<div class="mobile_menu_content">
+					<div class="mobile_menu_close open_mobile_menu">
+						<i class="fas fa-times"></i>
+					</div>
+					<div class="m-brand-logo">
+						<a href="index.html"><img src="assets/img/logo/surguru.png" alt=""></a>
+					</div>
+
+					<nav class="mobile-main-navigation  clearfix ul-li">
+						<ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html#or-about-1">About</a></li>
+							<li><a href="shop.html">Products</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- /Mobile-Menu -->
+		</div>
+	</header>
+
+	<!-- End of header section
+	============================================= -->
+
+
+	<!-- Start of Breadcrumb section
+	============================================= -->
+	<section id="or-breadcrumbs" class="or-breadcrumbs-section position-relative"
+		data-background="assets/img/bg/Garlic.jpg">
+		<div class="background_overlay"></div>
+		<div class="container">
+			<div class="or-breadcrumbs-content text-center">
+				<div class="page-title headline">
+					<h1>Shop</h1>
+				</div>
+				<div class="or-breadcrumbs-items ul-li">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>Shop</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End of Breadcrumb section
+	============================================= -->
+
+	<!-- Start of Shop product section
+	============================================= -->
+
+
+	<section id="or-shop-product" class="or-shop-product-section" data-background="assets/img/bg/cat-bg.jpg">
+		<div class="container">
+			<div class="or-section-title headline pera-content text-center middle-align">
+				<span class="sub-title">Products</span>
+				<h2>All of our products are
+					organic & fresh.</h2>
+			</div>
+
+			<div class="or-best-price-filter-btn ul-li text-center">
+				<ul class="filter clearfix text-center">
+					<li data-filter="all" class="active">All Product</li>
+					<li data-filter="garlic">Garlic</li>
+					<li data-filter="honey">Honey</li>
+					<li data-filter="coffee">Coffee</li>
+					<li data-filter="cardamom">Cardamom</li>
+					<li data-filter="pepper">Pepper</li>
+					<li data-filter="banana">Banana</li>
+					<li data-filter="tamarind">Tamarind</li>
+				</ul>
+
+			</div>
+			<div class="or-product-shop-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="garlic">
+
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/poondu3.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Kodaikanal Garlic (1st Quality)</a></h3>
+									<span class="price">"Supports Heart Health"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Kodaikanal Garlic ">Buy Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="garlic">
+
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/poondu1.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Naturally Smoked Hill Garlic</a></h3>
+									<span class="price">"Blood Circulation"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Smoked Hill Garlic">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="garlic">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/poondu2.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Garlic Bulbs (Uthiri)</a></h3>
+									<span class="price">"Fights Inflammation"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Garlic Bulbs (Uthiri)">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="garlic">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/poondu4.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Single Clove Garlic</a></h3>
+									<span class="price">"Detoxifies the Body"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Single Clove Garlic">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="garlic">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/poondu5.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Aromatic Garlic - Rasa Poondu</a></h3>
+									<span class="price">"Enhances Brain"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Aromatic Garlic - Rasam Poondu">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="honey">
+
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/naval_honey.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Jamun Honey (Navel Thean)</a></h3>
+									<span class="price">"Purifies blood"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Navel Honey">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="honey">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/rose_honey.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Rose Kulkanth</a></h3>
+									<span class="price">"Helps cool the body"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Rose Kulkanth">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="honey">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/kombu-honey.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Pure Hill Honey (Kombu Thean)</a></h3>
+									<span class="price">"Soothes sore throat"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Kombu Thean">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="honey">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/amla-honey.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Honey Amla</a></h3>
+									<span class="price">"Rich Nutrition"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Honey Amla">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="honey">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/garlic-honey.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Garlic Honey</a></h3>
+									<span class="price">"immunity Support"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Garlic Honey">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="cardamom">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/cat-7.png" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Cardamom</a></h3>
+									<span class="price">"Freshens Breath"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal" data-product="Cardamom">Buy
+										Now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="pepper">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/white-pepper.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">White Pepper</a></h3>
+									<span class="price">"Stimulates digestive"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="White Pepper">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="pepper">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/cat-4.png" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Black Pepper</a></h3>
+									<span class="price">"Improves Digestion"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Black Pepper">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="coffee">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/cat-6.png" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Coffee Powder</a></h3>
+									<span class="price">"Supports Metabolism"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Coffee Powder">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="banana">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/banana.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Sirumalai Banana</a></h3>
+									<span class="price">"Improves Skin Glow"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Sirumalai Banana">Buy Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 filter-item" data-category="tamarind">
+							<div class="or-product-innerbox-item type-1 text-center position-relative">
+
+								<div class="or-product-inner-img">
+									<img src="assets/img/product/puli.jpeg" alt="">
+								</div>
+								<div class="or-product-inner-text headline">
+									<h3><a href="shop-single.html" tabindex="0">Native Tamarind</a></h3>
+									<span class="price">"Cools the Body"</span>
+
+								</div>
+								<div class="or-product-btn text-center">
+									<a class="d-flex justify-content-center align-items-center " href="#" tabindex="0"
+										data-bs-toggle="modal" data-bs-target="#buyNowModal"
+										data-product="Tamarind - Puli">Buy Now</a>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header bg-success text-white">
+					<h5 class="modal-title" id="buyNowModalLabel">Order Form</h5>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form id="orderForm">
+						<div class="mb-3">
+							<label for="productName" class="form-label">Product</label>
+							<input type="text" class="form-control" id="productName" readonly>
+						</div>
+						<div class="mb-3">
+							<label for="customerName" class="form-label">Name</label>
+							<input type="text" class="form-control" id="customerName" placeholder="Enter your name"
+								required>
+						</div>
+						<div class="mb-3">
+							<label for="phoneNumber" class="form-label">Phone</label>
+							<input type="tel" class="form-control" id="phoneNumber"
+								placeholder="Enter your phone number" required pattern="[0-9]{10,}" minlength="10"
+								maxlength="10">
+						</div>
+						<div class="mb-3">
+							<label for="customerPlace" class="form-label">Place</label>
+							<input type="text" class="form-control" id="customerPlace" placeholder="Enter your place"
+								required>
+						</div>
+						<div class="mb-3">
+							<label for="quantity" class="form-label">Quantity (KG)</label>
+							<input type="number" class="form-control" id="quantity" min="1" value="1" required>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-success" onclick="submitToWhatsApp()">
+						<i class="fab fa-whatsapp me-2"></i>Send via WhatsApp
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- End of Shop product section
+	============================================= -->
+
+	<!-- Start of Footer section
+	============================================= -->
+	<footer id="or-footer-1" class="or-footer-section-1" data-background="assets/img/bg/bg-footer-top.png">
+		<div class="or-footer-newslatter-1">
+			<div class="container">
+				<div class="or-footer-newslatter-content headline  position-relative"
+					data-background="assets/img/bg/bg-mailchimp.jpg">
+					<span class="or-footer-newslatter-img"><img src="assets/img/bg/mailchimp-ima" alt=""></span>
+					<div class="or-footer-newslatter-text-form">
+						<h3>Subscribe to our Newsletter:</h3>
+						<div class="or-footer-newslatter-form position-relative">
+							<form action="#">
+								<input type="text" placeholder="type your mail address...">
+							</form>
+							<button>Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="or-footer-widget-wrapper-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="or-footer-widget headline pera-content ul-li-block">
+							<div class="or-logo-widget">
+								<a href="#">
+									<img src="assets/img/logo/surguru_logo.jpeg" alt=""
+										style="width:120px; height:auto;">
+								</a>
+
+								<p>We work with a passion of taking challenges and creating new ones in advertising
+									sector. </p>
+								<div class="footer-social">
+									<a href="https://www.facebook.com/share/19bVYqYXWk/" tabindex="0"><i
+											class="fab fa-facebook-f"></i></a>
+									<a href="https://www.instagram.com/sri_sarguru_organics?igsh=MW1ydWNkbDcyODN5dg%3D%3D"
+										tabindex="0"><i class="fab fa-instagram"></i></a>
+									<a href="tel:919940289467" tabindex="0"><i class="fab fa-whatsapp"></i></a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="or-footer-widget  headline pera-content ul-li-block">
+							<div class="or-menu-widget">
+								<h2 class="widget-title">Links</h2>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#or-about-1">About us</a></li>
+									<li><a href="shop.html">Products</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="or-footer-widget headline pera-content ul-li-block">
+							<div class="or-contact-widget">
+								<h2 class="widget-title">Official info:</h2>
+								<ul>
+									<li><i class="fas fa-map-marker-alt"></i> <span>Kodaikanal - 624101 </span></li>
+									<li><i class="fas fa-envelope"></i> <span> surguruorganic@gmail.com </span> </li>
+								</ul>
+								
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="or-footer-copyright text-center" data-background="assets/img/bg/bg-footer-bottom.png">
+			<span>© 2025 SoftflyMart - All rights reserved.</span>
+		</div>
+	</footer>
+	<!-- End of Footer section
+	============================================= -->
+
+	<!-- For Js Library -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/appear.js"></script>
+	<script src="assets/js/slick.js"></script>
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/js/parallax-scroll.js"></script>
+	<script src="assets/js/rbtools.min.js"></script>
+	<script src="assets/js/rs6.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/form.js"></script>
+
+
+</body>
+
+</html>
