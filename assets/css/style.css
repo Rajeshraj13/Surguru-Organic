@@ -1,34 +1,6 @@
 @charset "UTF-8";
 /*----------------------------------------------------
 
-
-CSS Table of content:-
-
-1. Global Area 
-2. Header Section
-3. slider Section
-4. shop-banner Section
-5. about Section
-6. category Section
-7. why-choose Section
-8. fun-fact Section
-9. product Section
-10. best-deal Section
-11. team Section
-12. portfolio Section
-13. blog Section
-14. commit Section
-15. testimonial Section
-16. cta Section
-17. feature Section
-18. how-it-works Section
-19. video Section
-20. breadcrumb Section
-21. contact Section
-22. service Section
-23. login-register Section
-24. footer Section
-25. Responsive Section
 =====================================================================*/
 /*=========
 Font load
@@ -6347,7 +6319,6 @@ select:visited {
   top: 3px;
   right: -7px;
   font-size: 14px;
-  content: "\f061";
   font-weight: 900;
   position: absolute;
   color: #27643b;
