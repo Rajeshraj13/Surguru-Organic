@@ -52,7 +52,7 @@ function submitToWhatsApp() {
         const encodedMessage = encodeURIComponent(message);
 
         // Replace with your WhatsApp business number (without +)
-        const whatsappNumber = "919940289467";
+        const whatsappNumber = "918015009167";
 
         // Create WhatsApp URL
         const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
@@ -81,7 +81,7 @@ document.getElementById("whatsappForm").addEventListener("submit", function (eve
     const message = document.getElementById("message").value.trim();
 
     // Your business WhatsApp number (with country code, no + sign)
-    const whatsappNumber = "919940289467";
+    const whatsappNumber = "918015009167";
 
     const text = `🌿 Hello Surguru Organic,%0A%0AI'd like to get in touch regarding your organic products.%0A%0A👤 Name: ${name}%0A📞 Phone: ${phone}%0A💬 Message: ${message}%0A%0AThank you!`;
 
